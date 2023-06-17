@@ -4,22 +4,23 @@
  //print the total number of demerit points.
 //For example, if the speed is 80, it should print: “Points: 2”.
 // If the driver gets more than 12 points, the function should print: “License suspended”.
-
-function calculateSpeed(speed){
-    speedlimit = 70
-    points = 0
-    dividedemerit = 5
+let speed = prompt("input speed")
+function calculateSpeed(){
+     const speedlimit = 70
+    const points = 0
+    const dividedemerit = 5
 
 if (speed < speedlimit) {
-    print ("OK.")
+    alert("OK.")
     
 }else if (speed > speedlimit){
    points = (speed - speedlimit) / dividemerit
-}if (points > 0 && points < 12){
-    print("Your points are",points)
+if (points > 0 && points < 12){
+    alert("Your points are",points)
 }else if (points > 12){
-    print("Your license is suspended")
+    alert("Your license is suspended")
+}
+}
 }
 
-}
-calculateSpeed();
+console.log(calculateSpeed);

@@ -22,5 +22,5 @@ else if(marks > 40 && marks <= 49){
     alert("You have a D!")
 }
 else if(marks < 40){
-    alert("You have an E! Do better :)")
+    alert("You have an E! Do better:)")
 }
