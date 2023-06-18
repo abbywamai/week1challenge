@@ -7,20 +7,22 @@
 let speed = prompt("input speed")
 function calculateSpeed(){
      const speedlimit = 70
-    const points = 0
-    const dividedemerit = 5
+    const points = 5
+    const maxpoints = 12
 
 if (speed < speedlimit) {
     alert("OK.")
     
-}else if (speed > speedlimit){
-   points = (speed - speedlimit) / dividemerit
-if (points > 0 && points < 12){
-    alert("Your points are",points)
-}else if (points > 12){
-    alert("Your license is suspended")
-}
-}
+}else {
+    const pastlimit = speed - speedlimit
+    const demeritpoints = Math.floor(speed / points)
+    if (demeritpoints > maxpoints){
+        return "Your license is invoked."
+    } else{
+        return "your points are" + points
+    }
 }
 
-console.log(calculateSpeed);
+}
+calculateSpeed(speed);
+console.log(calculateSpeed(speed));
