@@ -7,6 +7,9 @@ The user inputs the student's marks after the prompt. The output is given as the
 
 THE SECOND SOLUTION:
 It takes the input of a car's speed and tells wether the car is within speed limit, has earned demerit points or if the owner's license has been revocked.
+
+THE THIRD SOLUTION:
+It calculates the net salary of the user.
 # Author
 Abigail Wamai
 
