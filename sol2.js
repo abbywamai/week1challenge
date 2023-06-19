@@ -9,17 +9,17 @@ function calculateSpeed(){
      const speedlimit = 70
     const points = 5
     const maxpoints = 12
-
-if (speed < speedlimit) {
+// for speed less than 70
+if (speed <= speedlimit) {
     alert("OK.")
-    
-}else {
+    //for speed geater than 70
+}else  if (speed > speedlimit){
     const pastlimit = speed - speedlimit
-    const demeritpoints = Math.floor(speed / points)
+    const demeritpoints = Math.floor(pastlimit / points)
     if (demeritpoints > maxpoints){
-        return "Your license is invoked."
+        alert ("Your license is invoked.")
     } else{
-        return "your points are" + points
+        alert("your points are" + demeritpoints)
     }
 }
 

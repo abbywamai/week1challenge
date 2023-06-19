@@ -20,11 +20,9 @@ const NHIFDeductions = gross * nhifRate;
 
 const NSSFDeductions = gross * nssfRate;
 
-const net = gross - [payee + NHIFDeductions + NSSFDeductions];
-
-return (gross, payee, NHIFDeductions, NSSFDeductions, net);
+let net = gross - (payee + NHIFDeductions + NSSFDeductions);
+Math.floor(net)
+return  net;
 }
-console.log(payee)
-console.log(NHIFDeductions)
-console.log(NSSFDeductions)
-console.log(net)
+console.log(netSalCalc(benefits, salary))
+window.alert(netSalCalc(benefits, salary))

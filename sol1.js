@@ -9,18 +9,24 @@ let marks = prompt("Please Enter Marks")
 if(marks > 100|| marks < 0){
     alert("Invalid")
 } 
+//for A grade
 else if(marks > 79){
     alert("You have an A!")
 } 
+//for B grade
 else if(marks > 60 &&  marks <= 79){
     alert("You have a B!")
 }
+//for C grade
+
 else if(marks > 49 && marks <= 59){
     alert("You have a C!")
 }
+//for D grade
 else if(marks > 40 && marks <= 49){
     alert("You have a D!")
 }
+//for E grade
 else if(marks < 40){
     alert("You have an E! Do better:)")
 }
