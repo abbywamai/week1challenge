@@ -1,5 +1,5 @@
-# Title
-Student Grade Generator
+#Title
+Week 1 challenge
 
 # Description
 THE FIRST SOLUTION:
