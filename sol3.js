@@ -2,27 +2,12 @@
 //Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary.
 
 let basicSalary = prompt("enter salary")
-let benefits = prompt("enter benefits")
-
-
-
-function netSalCalc(basicSalary, benefits){
-    let taxRate = 0.3;
-    let nhifRate = 0.02;
-    let nssfRate = 0.05;
-
+    
 //calculate the deductions and net salary then return the values
-const gross = basicSalary + benefits;
+let taxRate = (30 * gross)/100
+let nhifRate = (0.02 * gross);
+let nssfRate = (0.05 * gross);
+let net = gross - taxRate - nhifRate - nssfRate;
 
-const payee = gross * taxRate;
-
-const NHIFDeductions = gross * nhifRate;
-
-const NSSFDeductions = gross * nssfRate;
-
-let net = gross - (payee + NHIFDeductions + NSSFDeductions);
-Math.floor(net)
-return  net;
-}
-console.log(netSalCalc(benefits, salary))
-window.alert(netSalCalc(benefits, salary))
+console.log(`${net}`)
+window.alert(`${net}`)
