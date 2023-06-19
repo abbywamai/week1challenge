@@ -13,6 +13,7 @@ function calculateSpeed(){
 if (speed <= speedlimit) {
     alert("OK.")
     //for speed geater than 70
+    
 }else  if (speed > speedlimit){
     const pastlimit = speed - speedlimit
     const demeritpoints = Math.floor(pastlimit / points)
